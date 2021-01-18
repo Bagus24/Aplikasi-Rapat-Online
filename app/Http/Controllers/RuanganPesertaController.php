@@ -103,7 +103,7 @@ class RuanganPesertaController extends Controller
 
         if (Auth::check()) {
             date_default_timezone_set('Asia/Jakarta');
-            $tanggal = date("yy-m-d");
+            $tanggal = date("Y-m-d");
             $waktu = date("H:i");
             $agenda = Agenda::where('kode', $kode)->first();
             $tanggal_rapat = $agenda['tanggal'];

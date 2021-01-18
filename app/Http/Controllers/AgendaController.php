@@ -50,7 +50,6 @@ class AgendaController extends Controller
     }
     public function store(Request $request)
     {
-
         $ambiltanggal = $request['tanggal'];
         $ambilbulan = substr($ambiltanggal, 5, 2);
         $ambiltahun = substr($ambiltanggal, 0, 4);
@@ -78,7 +77,7 @@ class AgendaController extends Controller
         $sekarang = date("yy-m-d");
         $tanggalsekarang = date("d");
         $bulansekarang = date("m");
-        $tahunsekarang = date("yy");
+        $tahunsekarang = date("Y");
 
         
 
@@ -255,7 +254,7 @@ class AgendaController extends Controller
                 date_default_timezone_set('Asia/Jakarta');
                 $tanggalemail = date("d");
                 $bulanemail = date("m");
-                $tahunemail = date("yy");
+                $tahunemail = date("Y");
 
                 if ($bulanemail == '01') {
                     $bulanemail = 'Januari';
@@ -381,7 +380,7 @@ class AgendaController extends Controller
             date_default_timezone_set('Asia/Jakarta');
             $tanggalemail = date("d");
             $bulanemail = date("m");
-            $tahunemail = date("yy");
+            $tahunemail = date("Y");
 
             if ($bulanemail == '01') {
                 $bulanemail = 'Januari';
@@ -509,7 +508,7 @@ class AgendaController extends Controller
         $sekarang = date("yy-m-d");
         $tanggalsekarang = date("d");
         $bulansekarang = date("m");
-        $tahunsekarang = date("yy");
+        $tahunsekarang = date("Y");
 
         
         if ($ambiltahun < $tahunsekarang | $ambilbulan < $bulansekarang | $ambilhari < $tanggalsekarang) {
@@ -652,7 +651,7 @@ class AgendaController extends Controller
             date_default_timezone_set('Asia/Jakarta');
             $tanggalemail = date("d");
             $bulanemail = date("m");
-            $tahunemail = date("yy");
+            $tahunemail = date("Y");
 
             if ($bulanemail == '01') {
                 $bulanemail = 'Januari';
@@ -834,7 +833,7 @@ class AgendaController extends Controller
                 date_default_timezone_set('Asia/Jakarta');
                 $tanggalemail = date("d");
                 $bulanemail = date("m");
-                $tahunemail = date("yy");
+                $tahunemail = date("Y");
 
                 if ($bulanemail == '01') {
                     $bulanemail = 'Januari';
