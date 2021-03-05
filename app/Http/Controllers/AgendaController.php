@@ -74,7 +74,7 @@ class AgendaController extends Controller
         }
 
         date_default_timezone_set('Asia/Jakarta');
-        $sekarang = date("yy-m-d");
+        $sekarang = date("Y-m-d");
         $tanggalsekarang = date("d");
         $bulansekarang = date("m");
         $tahunsekarang = date("Y");
@@ -505,7 +505,7 @@ class AgendaController extends Controller
         
 
         date_default_timezone_set('Asia/Jakarta');
-        $sekarang = date("yy-m-d");
+        $sekarang = date("Y-m-d");
         $tanggalsekarang = date("d");
         $bulansekarang = date("m");
         $tahunsekarang = date("Y");
